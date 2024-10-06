@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+.user-table-container{
+padding: 0 1.8rem;
+}
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+tr:nth-child(even) {
+    background-color: #e8e8e8; /* Apply light gray background for even rows */
+  }
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+td button{
+  border: none;
+  background: none;
+}
+.edit-btn{
+color: rgb(62, 62, 243);
+
+}
+.delete-btn{
+  color:red;
+}
+.view-btn{
+  color:green;
+  padding: 0 6px;
+}
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+
+/* Responsive Table */
+@media (max-width: 760px) {
+  .user-table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  thead {
+    display: none; /*It will hide table header on small screens */
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  td {
+    display: block;
+    text-align: center;
+  
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.create-user-btn {
+  margin-top: 32px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
