@@ -47,3 +47,10 @@ A simple User Management Application built with React. This app allows users to 
         npm start
 
 2. Open your browser and go to http://localhost:3000 to view the application.
+
+
+### API Reference
+JSONPlaceholderAPI
+
+### License
+This project is licensed under the MIT License.
